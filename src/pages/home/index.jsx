@@ -13,7 +13,7 @@ import { createWeb3Modal, defaultWagmiConfig } from '@web3modal/wagmi1/vue';
 import { mainnet, arbitrum } from 'viem/chains';
 import { getAccount } from '@wagmi/core';
 import { ethers } from "ethers";
-
+import logo from "../../assets/trucking-empire-logo.png"
 
 const projectId = import.meta.env.VITE_REACT_PROJECTID;
 // console.log("project_id", projectId );
@@ -96,7 +96,7 @@ const Home = () =>
           <img
             className="zoom-in-out"
             style={ { width: "100%" } }
-            src="./trucking-empire-logo.png"
+            src={logo}
             alt="Logo"
           />
         </Grid>
