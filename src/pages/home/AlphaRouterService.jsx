@@ -1,7 +1,7 @@
 import { AlphaRouter } from "@uniswap/smart-order-router";
 import { Token, CurrencyAmount, TradeType, Percent } from "@uniswap/sdk-core";
 import { ethers, BigNumber } from "ethers";
-
+import JSBI from "jsbi";
 import ERC20ABI from './abi.json';
 const V3_SWAP_Router_ADRRESS = import.meta.env.VITE_REACT_V3_SWAP_ROUTER_ADDRESS;
 const testnet_url = import.meta.env.VITE_REACT_TESTNET_URL;
@@ -29,7 +29,7 @@ export const getPrice = async ( inputAmount, slippageAmount, deadline, walletAdd
 {
     const percentSlippage = new Percent( slippageAmount, 100 )
     const wei = ethers.utils.parseUnits( inputAmount.toString(), decimal0 )
-    const currencyAmount = CurrencyAmount.fromRawAmount( WETH,  wei )
+  const currencyAmount = CurrencyAmount.fromRawAmount( WETH, JSBI.BigInt( wei ) );
     
     
   const route = await router.route(
