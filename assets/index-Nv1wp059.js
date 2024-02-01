@@ -79976,7 +79976,7 @@ async function call(client2, args) {
     return { data: response };
   } catch (err) {
     const data3 = getRevertErrorData(err);
-    const { offchainLookup, offchainLookupSignature } = await __vitePreload(() => import("./ccip-0_iy--7W.js"), true ? __vite__mapDeps([]) : void 0);
+    const { offchainLookup, offchainLookupSignature } = await __vitePreload(() => import("./ccip-NLUifDSe.js"), true ? __vite__mapDeps([]) : void 0);
     if (data3?.slice(0, 10) === offchainLookupSignature && to) {
       return { data: await offchainLookup(client2, { data: data3, to }) };
     }
@@ -85256,7 +85256,7 @@ async function fetchEnsAvatar({
   name: name2,
   chainId: chainId2
 }) {
-  const { normalize: normalize2 } = await __vitePreload(() => import("./index-2UB8pGMD.js"), true ? __vite__mapDeps([]) : void 0);
+  const { normalize: normalize2 } = await __vitePreload(() => import("./index-b4pxBCXx.js"), true ? __vite__mapDeps([]) : void 0);
   const publicClient = getPublicClient({ chainId: chainId2 });
   const avatar = await publicClient.getEnsAvatar({ name: normalize2(name2) });
   return avatar;
@@ -109370,7 +109370,7 @@ var CoinbaseWalletConnector = class extends Connector {
   }
   async getProvider() {
     if (!__privateGet$1(this, _provider$1)) {
-      let CoinbaseWalletSDK = (await __vitePreload(() => import("./index-7QNbRELe.js").then((n4) => n4.i), true ? __vite__mapDeps([]) : void 0)).default;
+      let CoinbaseWalletSDK = (await __vitePreload(() => import("./index-zznHnGW1.js").then((n4) => n4.i), true ? __vite__mapDeps([]) : void 0)).default;
       if (typeof CoinbaseWalletSDK !== "function" && typeof CoinbaseWalletSDK.default === "function")
         CoinbaseWalletSDK = CoinbaseWalletSDK.default;
       __privateSet$1(this, _client, new CoinbaseWalletSDK(this.options));
@@ -114620,7 +114620,7 @@ createProvider_fn = async function() {
 };
 _initProvider = /* @__PURE__ */ new WeakSet();
 initProvider_fn = async function() {
-  const { EthereumProvider } = await __vitePreload(() => import("./index.es-I5GRGvVg.js"), true ? __vite__mapDeps([]) : void 0);
+  const { EthereumProvider } = await __vitePreload(() => import("./index.es-0lx4zVz2.js"), true ? __vite__mapDeps([]) : void 0);
   const optionalChains = this.chains.map(({ id: id2 }) => id2);
   if (optionalChains.length) {
     const {
@@ -114855,6 +114855,7 @@ function createWeb3Modal(options) {
   }
   return modal;
 }
+const logo = "/truckingEmpire/assets/trucking-empire-logo-SGJb7gUQ.png";
 const projectId = "05c6fd6b3708f60c6c5dcdd31968eeef";
 const metadata = {
   name: "Web3Modal",
@@ -114916,7 +114917,7 @@ const Home = () => {
       {
         className: "zoom-in-out",
         style: { width: "100%" },
-        src: "./trucking-empire-logo.png",
+        src: logo,
         alt: "Logo"
       }
     ) }) }),
