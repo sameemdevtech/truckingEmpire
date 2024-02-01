@@ -1,4 +1,4 @@
-import { p as proxy, s as subscribe, e as snapshot, _ as __vitePreload } from "./index-AvtPoRBJ.js";
+import { p as proxy, s as subscribe, e as snapshot, _ as __vitePreload } from "./index-IOxiBTEZ.js";
 const o = proxy({ history: ["ConnectWallet"], view: "ConnectWallet", data: void 0 }), T = { state: o, subscribe(e) {
   return subscribe(o, () => e(o));
 }, push(e, t) {
@@ -230,7 +230,7 @@ class d {
   }
   async initUi() {
     if (typeof window < "u") {
-      await __vitePreload(() => import("./index-_BUmctv1.js"), true ? __vite__mapDeps([0,1,2]) : void 0);
+      await __vitePreload(() => import("./index-0CHFuUak.js"), true ? __vite__mapDeps([0,1,2]) : void 0);
       const e = document.createElement("wcm-modal");
       document.body.insertAdjacentElement("beforeend", e), p.setIsUiLoaded(true);
     }
@@ -254,7 +254,7 @@ export {
 };
 function __vite__mapDeps(indexes) {
   if (!__vite__mapDeps.viteFileDeps) {
-    __vite__mapDeps.viteFileDeps = ["assets/index-_BUmctv1.js","assets/index-AvtPoRBJ.js","assets/index-0XaLmBNr.css"]
+    __vite__mapDeps.viteFileDeps = ["assets/index-0CHFuUak.js","assets/index-IOxiBTEZ.js","assets/index-0XaLmBNr.css"]
   }
   return indexes.map((i) => __vite__mapDeps.viteFileDeps[i])
 }

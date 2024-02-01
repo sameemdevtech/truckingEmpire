@@ -1,4 +1,4 @@
-import { t as getAugmentedNamespace, u as require$$0$2, v as cjs$3, w as eventsExports, x as binary, y as wipe, z as random, A as fromString, C as toString, D as concat, E as commonjsGlobal, F as getDefaultExportFromCjs, G as w$3, V as Vt$1, M as Mt$1, N as N$2, J as kn, K as Vn$1, L as Mn, O as Kn, P as Ae, Q as qn, R as xn, S as Hn, T as Fn, U as ee$1, $ as $$2, W as p$2, X as Jn, Y as ut$1, Z as er$1, a0 as Xn, a1 as nr$1, a2 as $g, a3 as _$2, a4 as pt$1, a5 as It$1, a6 as wt$1, a7 as at$1, a8 as yt$1, a9 as U$2, aa as mt$1, ab as Ht$1, ac as kt$1, ad as h$3, ae as ft$2, af as lt$1, ag as dt$1, ah as C, ai as D$3, aj as te$1, ak as rt$1, al as ot$1, am as Ln, an as vt$1, ao as Et$1, ap as k$1, aq as Qn, ar as B$1, as as jt$1, at as gt$1, au as ht$1, av as Dt$1, aw as tr$1, ax as xt$1, ay as Lt$1, az as ln, aA as fn, aB as qt$1, aC as dn, aD as Kt$1, aE as zt$1, aF as Bt$1, aG as Yt$1, aH as Xt, aI as Gt$1, aJ as Wt, aK as Jt$1, aL as Ft$1, aM as fetch$1, aN as en, aO as oe$1, aP as S$2, aQ as ve, aR as Un, _ as __vitePreload } from "./index-AvtPoRBJ.js";
+import { t as getAugmentedNamespace, u as require$$0$2, v as cjs$3, w as eventsExports, x as binary, y as wipe, z as random, A as fromString, C as toString, D as concat, E as commonjsGlobal, F as getDefaultExportFromCjs, G as w$3, V as Vt$1, M as Mt$1, N as N$2, J as kn, K as Vn$1, L as Mn, O as Kn, P as Ae, Q as qn, R as xn, S as Hn, T as Fn, U as ee$1, $ as $$2, W as p$2, X as Jn, Y as ut$1, Z as er$1, a0 as Xn, a1 as nr$1, a2 as $g, a3 as _$2, a4 as pt$1, a5 as It$1, a6 as wt$1, a7 as at$1, a8 as yt$1, a9 as U$2, aa as mt$1, ab as Ht$1, ac as kt$1, ad as h$3, ae as ft$2, af as lt$1, ag as dt$1, ah as C, ai as D$3, aj as te$1, ak as rt$1, al as ot$1, am as Ln, an as vt$1, ao as Et$1, ap as k$1, aq as Qn, ar as B$1, as as jt$1, at as gt$1, au as ht$1, av as Dt$1, aw as tr$1, ax as xt$1, ay as Lt$1, az as ln, aA as fn, aB as qt$1, aC as dn, aD as Kt$1, aE as zt$1, aF as Bt$1, aG as Yt$1, aH as Xt, aI as Gt$1, aJ as Wt, aK as Jt$1, aL as Ft$1, aM as fetch$1, aN as en, aO as oe$1, aP as S$2, aQ as ve, aR as Un, _ as __vitePreload } from "./index-IOxiBTEZ.js";
 const suspectProtoRx = /"(?:_|\\u0{2}5[Ff]){2}(?:p|\\u0{2}70)(?:r|\\u0{2}72)(?:o|\\u0{2}6[Ff])(?:t|\\u0{2}74)(?:o|\\u0{2}6[Ff])(?:_|\\u0{2}5[Ff]){2}"\s*:/;
 const suspectConstructorRx = /"(?:c|\\u0063)(?:o|\\u006[Ff])(?:n|\\u006[Ee])(?:s|\\u0073)(?:t|\\u0074)(?:r|\\u0072)(?:u|\\u0075)(?:c|\\u0063)(?:t|\\u0074)(?:o|\\u006[Ff])(?:r|\\u0072)"\s*:/;
 const JsonSigRx = /^\s*["[{]|^\s*-?\d{1,16}(\.\d{1,17})?([Ee][+-]?\d+)?\s*$/;
@@ -10822,7 +10822,7 @@ class v2 {
     if (this.rpc = this.getRpcConfig(t), this.chainId = this.rpc.chains.length ? g2(this.rpc.chains) : g2(this.rpc.optionalChains), this.signer = await hv.init({ projectId: this.rpc.projectId, metadata: this.rpc.metadata, disableProviderPing: t.disableProviderPing, relayUrl: t.relayUrl, storageOptions: t.storageOptions }), this.registerEventListeners(), await this.loadPersistedSession(), this.rpc.showQrModal) {
       let s;
       try {
-        const { WalletConnectModal: i } = await __vitePreload(() => import("./index-Wr_6TM0l.js").then((n2) => n2.i), true ? __vite__mapDeps([0,1,2]) : void 0);
+        const { WalletConnectModal: i } = await __vitePreload(() => import("./index-CaLqTotn.js").then((n2) => n2.i), true ? __vite__mapDeps([0,1,2]) : void 0);
         s = i;
       } catch {
         throw new Error("To use QR modal, please install @walletconnect/modal package");
@@ -10876,7 +10876,7 @@ export {
 };
 function __vite__mapDeps(indexes) {
   if (!__vite__mapDeps.viteFileDeps) {
-    __vite__mapDeps.viteFileDeps = ["assets/index-Wr_6TM0l.js","assets/index-AvtPoRBJ.js","assets/index-0XaLmBNr.css"]
+    __vite__mapDeps.viteFileDeps = ["assets/index-CaLqTotn.js","assets/index-IOxiBTEZ.js","assets/index-0XaLmBNr.css"]
   }
   return indexes.map((i) => __vite__mapDeps.viteFileDeps[i])
 }

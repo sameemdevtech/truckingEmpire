@@ -79663,7 +79663,7 @@ function decodeFunctionResult({ abi: abi2, args, functionName, data: data2 }) {
 }
 const scriptRel = "modulepreload";
 const assetsURL = function(dep) {
-  return "/" + dep;
+  return "/truckingEmpire/" + dep;
 };
 const seen = {};
 const __vitePreload = function preload(baseModule, deps, importerUrl) {
@@ -79976,7 +79976,7 @@ async function call(client2, args) {
     return { data: response };
   } catch (err) {
     const data3 = getRevertErrorData(err);
-    const { offchainLookup, offchainLookupSignature } = await __vitePreload(() => import("./ccip-TZwQ8YkJ.js"), true ? __vite__mapDeps([]) : void 0);
+    const { offchainLookup, offchainLookupSignature } = await __vitePreload(() => import("./ccip-0_iy--7W.js"), true ? __vite__mapDeps([]) : void 0);
     if (data3?.slice(0, 10) === offchainLookupSignature && to) {
       return { data: await offchainLookup(client2, { data: data3, to }) };
     }
@@ -83584,7 +83584,7 @@ var __privateMethod = (obj, member, method) => {
   __accessCheck(obj, member, "access private method");
   return method;
 };
-var define_import_meta_env_default$2 = { VITE_REACT_PROJECTID: "05c6fd6b3708f60c6c5dcdd31968eeef", VITE_REACT_STAKING_CONTRACT_ADDRESS: "0xfB528B5905C8f9398fb625Ab4155C567A75cCC9F", VITE_REACT_STAKE_TOKEN_CONTRACT_ADDRESS: "0x5263fdc29e84891ded4e0fb8be4084398d9a6e84", VITE_REACT_V3_SWAP_ROUTER_ADDRESS: "0x68b3465833fb72A70ecDF485E0e4C7bD8665Fc45", VITE_REACT_TESTNET_URL: "https://holesky-fullnode-testnet.rpc.grove.city/v1/e62fd814", VITE_REACT_CHAIN_ID: "3", VITE_REACT_ADDRESS0: "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2", VITE_REACT_ADDRESS1: "0x1f9840a85d5af5bf1d1762f925bdaddc4201f984", BASE_URL: "/", MODE: "production", DEV: false, PROD: true, SSR: false };
+var define_import_meta_env_default$2 = { VITE_REACT_PROJECTID: "05c6fd6b3708f60c6c5dcdd31968eeef", VITE_REACT_STAKING_CONTRACT_ADDRESS: "0xfB528B5905C8f9398fb625Ab4155C567A75cCC9F", VITE_REACT_STAKE_TOKEN_CONTRACT_ADDRESS: "0x5263fdc29e84891ded4e0fb8be4084398d9a6e84", VITE_REACT_V3_SWAP_ROUTER_ADDRESS: "0x68b3465833fb72A70ecDF485E0e4C7bD8665Fc45", VITE_REACT_TESTNET_URL: "https://holesky-fullnode-testnet.rpc.grove.city/v1/e62fd814", VITE_REACT_CHAIN_ID: "3", VITE_REACT_ADDRESS0: "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2", VITE_REACT_ADDRESS1: "0x1f9840a85d5af5bf1d1762f925bdaddc4201f984", BASE_URL: "/truckingEmpire/", MODE: "production", DEV: false, PROD: true, SSR: false };
 const subscribeWithSelectorImpl = (fn2) => (set2, get2, api2) => {
   const origSubscribe = api2.subscribe;
   api2.subscribe = (selector, optListener, options) => {
@@ -83938,7 +83938,7 @@ const persistImpl = (config2, baseOptions) => {
   return newImpl(config2, baseOptions);
 };
 const persist = persistImpl;
-var define_import_meta_env_default$1 = { VITE_REACT_PROJECTID: "05c6fd6b3708f60c6c5dcdd31968eeef", VITE_REACT_STAKING_CONTRACT_ADDRESS: "0xfB528B5905C8f9398fb625Ab4155C567A75cCC9F", VITE_REACT_STAKE_TOKEN_CONTRACT_ADDRESS: "0x5263fdc29e84891ded4e0fb8be4084398d9a6e84", VITE_REACT_V3_SWAP_ROUTER_ADDRESS: "0x68b3465833fb72A70ecDF485E0e4C7bD8665Fc45", VITE_REACT_TESTNET_URL: "https://holesky-fullnode-testnet.rpc.grove.city/v1/e62fd814", VITE_REACT_CHAIN_ID: "3", VITE_REACT_ADDRESS0: "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2", VITE_REACT_ADDRESS1: "0x1f9840a85d5af5bf1d1762f925bdaddc4201f984", BASE_URL: "/", MODE: "production", DEV: false, PROD: true, SSR: false };
+var define_import_meta_env_default$1 = { VITE_REACT_PROJECTID: "05c6fd6b3708f60c6c5dcdd31968eeef", VITE_REACT_STAKING_CONTRACT_ADDRESS: "0xfB528B5905C8f9398fb625Ab4155C567A75cCC9F", VITE_REACT_STAKE_TOKEN_CONTRACT_ADDRESS: "0x5263fdc29e84891ded4e0fb8be4084398d9a6e84", VITE_REACT_V3_SWAP_ROUTER_ADDRESS: "0x68b3465833fb72A70ecDF485E0e4C7bD8665Fc45", VITE_REACT_TESTNET_URL: "https://holesky-fullnode-testnet.rpc.grove.city/v1/e62fd814", VITE_REACT_CHAIN_ID: "3", VITE_REACT_ADDRESS0: "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2", VITE_REACT_ADDRESS1: "0x1f9840a85d5af5bf1d1762f925bdaddc4201f984", BASE_URL: "/truckingEmpire/", MODE: "production", DEV: false, PROD: true, SSR: false };
 const createStoreImpl = (createState) => {
   let state2;
   const listeners2 = /* @__PURE__ */ new Set();
@@ -85256,7 +85256,7 @@ async function fetchEnsAvatar({
   name: name2,
   chainId: chainId2
 }) {
-  const { normalize: normalize2 } = await __vitePreload(() => import("./index--JK178hv.js"), true ? __vite__mapDeps([]) : void 0);
+  const { normalize: normalize2 } = await __vitePreload(() => import("./index-2UB8pGMD.js"), true ? __vite__mapDeps([]) : void 0);
   const publicClient = getPublicClient({ chainId: chainId2 });
   const avatar = await publicClient.getEnsAvatar({ name: normalize2(name2) });
   return avatar;
@@ -85274,7 +85274,7 @@ const t$6 = Symbol();
 const s$8 = Object.getPrototypeOf, c$8 = /* @__PURE__ */ new WeakMap(), l$4 = (e2) => e2 && (c$8.has(e2) ? c$8.get(e2) : s$8(e2) === Object.prototype || s$8(e2) === Array.prototype), y$4 = (e2) => l$4(e2) && e2[t$6] || null, h$9 = (e2, t2 = true) => {
   c$8.set(e2, t2);
 };
-var define_import_meta_env_default = { VITE_REACT_PROJECTID: "05c6fd6b3708f60c6c5dcdd31968eeef", VITE_REACT_STAKING_CONTRACT_ADDRESS: "0xfB528B5905C8f9398fb625Ab4155C567A75cCC9F", VITE_REACT_STAKE_TOKEN_CONTRACT_ADDRESS: "0x5263fdc29e84891ded4e0fb8be4084398d9a6e84", VITE_REACT_V3_SWAP_ROUTER_ADDRESS: "0x68b3465833fb72A70ecDF485E0e4C7bD8665Fc45", VITE_REACT_TESTNET_URL: "https://holesky-fullnode-testnet.rpc.grove.city/v1/e62fd814", VITE_REACT_CHAIN_ID: "3", VITE_REACT_ADDRESS0: "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2", VITE_REACT_ADDRESS1: "0x1f9840a85d5af5bf1d1762f925bdaddc4201f984", BASE_URL: "/", MODE: "production", DEV: false, PROD: true, SSR: false };
+var define_import_meta_env_default = { VITE_REACT_PROJECTID: "05c6fd6b3708f60c6c5dcdd31968eeef", VITE_REACT_STAKING_CONTRACT_ADDRESS: "0xfB528B5905C8f9398fb625Ab4155C567A75cCC9F", VITE_REACT_STAKE_TOKEN_CONTRACT_ADDRESS: "0x5263fdc29e84891ded4e0fb8be4084398d9a6e84", VITE_REACT_V3_SWAP_ROUTER_ADDRESS: "0x68b3465833fb72A70ecDF485E0e4C7bD8665Fc45", VITE_REACT_TESTNET_URL: "https://holesky-fullnode-testnet.rpc.grove.city/v1/e62fd814", VITE_REACT_CHAIN_ID: "3", VITE_REACT_ADDRESS0: "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2", VITE_REACT_ADDRESS1: "0x1f9840a85d5af5bf1d1762f925bdaddc4201f984", BASE_URL: "/truckingEmpire/", MODE: "production", DEV: false, PROD: true, SSR: false };
 const isObject = (x2) => typeof x2 === "object" && x2 !== null;
 const proxyStateMap = /* @__PURE__ */ new WeakMap();
 const refSet = /* @__PURE__ */ new WeakSet();
@@ -109370,7 +109370,7 @@ var CoinbaseWalletConnector = class extends Connector {
   }
   async getProvider() {
     if (!__privateGet$1(this, _provider$1)) {
-      let CoinbaseWalletSDK = (await __vitePreload(() => import("./index-c_1Q7joH.js").then((n4) => n4.i), true ? __vite__mapDeps([]) : void 0)).default;
+      let CoinbaseWalletSDK = (await __vitePreload(() => import("./index-7QNbRELe.js").then((n4) => n4.i), true ? __vite__mapDeps([]) : void 0)).default;
       if (typeof CoinbaseWalletSDK !== "function" && typeof CoinbaseWalletSDK.default === "function")
         CoinbaseWalletSDK = CoinbaseWalletSDK.default;
       __privateSet$1(this, _client, new CoinbaseWalletSDK(this.options));
@@ -114620,7 +114620,7 @@ createProvider_fn = async function() {
 };
 _initProvider = /* @__PURE__ */ new WeakSet();
 initProvider_fn = async function() {
-  const { EthereumProvider } = await __vitePreload(() => import("./index.es-5eEELIYv.js"), true ? __vite__mapDeps([]) : void 0);
+  const { EthereumProvider } = await __vitePreload(() => import("./index.es-I5GRGvVg.js"), true ? __vite__mapDeps([]) : void 0);
   const optionalChains = this.chains.map(({ id: id2 }) => id2);
   if (optionalChains.length) {
     const {
