@@ -31,6 +31,7 @@ export default defineConfig({
       jsbi: path.resolve(__dirname, 'node_modules/jsbi'),
     }
   },
+  base: "/truckingEmpire/",
   build: {
     minify: false,
     target: "es2020", // Enable Big integer literals
